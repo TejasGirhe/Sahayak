@@ -1,0 +1,4 @@
+car
+bike
+apple
+avocado

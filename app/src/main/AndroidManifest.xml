@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:dist="http://schemas.android.com/apk/distribution"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="org.tensorflow.lite.examples.objectdetection">
+    <!-- Enable instant app support -->
+    <dist:module dist:instant="true" /> <!-- Declare features -->
+    <uses-feature android:name="android.hardware.camera" /> <!-- Declare permissions -->
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <uses-feature
+        android:name="android.hardware.camera.ar"
+        android:required="true" />
+    <uses-feature android:name="android.hardware.camera" />
+    <uses-feature android:name="android.hardware.camera.autofocus" />
+
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:taskAffinity=""
+        android:theme="@style/AppTheme"
+        tools:ignore="AllowBackup">
+        <activity
+            android:name=".java_activities.PlaygroundActivity"
+            android:exported="false" />
+        <activity
+            android:name=".java_activities.ImageActivity"
+            android:exported="false" />
+        <activity
+            android:name=".java_activities.InfoActivity"
+            android:exported="false" />
+        <activity
+            android:name=".java_activities.TypeActivity"
+            android:exported="false" />
+        <activity
+            android:name=".java_activities.ScanActivity"
+            android:exported="false" />
+        <activity
+            android:name=".kotlin_activities.MainActivity"
+            android:clearTaskOnLaunch="true"
+            android:configChanges="orientation|screenLayout|screenSize|smallestScreenSize"
+            android:exported="false"
+            android:icon="@mipmap/ic_launcher"
+            android:resizeableActivity="true"
+            android:rotationAnimation="seamless"
+            tools:targetApi="O" />
+        <activity
+            android:name=".java_activities.LandingActivity"
+            android:exported="true">
+
+            <!-- Main app intent filter -->
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+
+            <!-- Declare notch support -->
+            <meta-data
+                android:name="android.notch_support"
+                android:value="true" />
+        </activity>
+    </application>
+
+</manifest>
