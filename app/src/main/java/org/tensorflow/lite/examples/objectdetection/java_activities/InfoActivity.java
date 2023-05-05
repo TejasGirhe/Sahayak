@@ -257,7 +257,7 @@ public class InfoActivity extends AppCompatActivity {
         int wordEndIndex = wordStartIndex + currentWord.length();
 
         SpannableStringBuilder builder = new SpannableStringBuilder(sentence);
-        builder.setSpan(new BackgroundColorSpan(Color.BLUE), wordStartIndex, wordEndIndex, Spannable.SPAN_EXCLUSIVE_EXCLUSIVE);
+        builder.setSpan(new BackgroundColorSpan(Color.YELLOW), wordStartIndex, wordEndIndex, Spannable.SPAN_EXCLUSIVE_EXCLUSIVE);
         sentenceTextView.setText(builder);
     }
 
