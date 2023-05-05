@@ -1,4 +1,20 @@
-# TensorFlow Lite Object Detection Android Demo
+### This is my final year B.Tech. project 
+### Introduction
+
+In this project, we have developed an innovative educational tool that lever- ages the latest technologies to help children with reading disabilities develop critical reading skills. This android application uses augmented reality and artificial intelligence. This app offers a range of features that help children learn to read by providing them with interactive and engaging tools that enhance their learning experience.
+The user can scan typed text from the app or type the text that they would like to process. The app provides synonyms and meanings of the word, help- ing to build their vocabulary and comprehension skills. In addition, the app identifies the part of speech for each word, helping children understand the grammatical structure of sentences.
+To assist with reading fluency, the app also reads aloud the text, allowing children to listen to the words as they read along. This feature is particularly useful for children who struggle with reading, as it helps them develop their reading skills and build confidence in their abilities. Another feature of the
+13
+CHAPTER 4. PROPOSED WORK 14
+app is the reading tracker, which helps children trace the text as it is read. This tool is particularly helpful for children with visual processing difficul- ties, as it enables them to focus on individual words and track their progress as they read. Images are generated for a word using AI, giving children a visual representation of the word they are learning.
+Finally, the app includes an augmented reality component, allowing users to view 3D models of objects in their own space. This feature is particularly useful for children who learn best through visual and tactile experiences, as it provides a hands-on learning experience that enhances their understanding of the world around them.
+
+
+
+
+
+
+
 
 ### Overview
 
